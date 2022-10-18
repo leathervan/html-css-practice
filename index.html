@@ -7,16 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <script src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <title>Document</title>
 </head>
 
 <body>
-    <section class="promo">
+    <section class="promo" id="home">
         <div class="container">
             <header class="header">
                 <a class="logo" href="#">
@@ -30,11 +28,11 @@
                 </a>
                 <nav class="nav">
                     <ul class="nav_list">
-                        <li class="nav_item"><a href="#">Home</a></li>
-                        <li class="nav_item"><a href="#">Service</a></li>
-                        <li class="nav_item"><a href="#">Extension</a></li>
-                        <li class="nav_item"><a href="#">Pricing</a></li>
-                        <li class="nav_item"><a href="#">Help</a></li>
+                        <li class="nav_item"><a href="#home">Home</a></li>
+                        <li class="nav_item"><a href="#info">Useful</a></li>
+                        <li class="nav_item"><a href="#services">Service</a></li>
+                        <li class="nav_item"><a href="#team">Team</a></li>
+                        <li class="nav_item"><a href="#help">Help</a></li>
                     </ul>
                 </nav>
                 <div class="promo_signup">
@@ -50,14 +48,14 @@
                         aliquip ex ea commodo consequat.
                     </div>
                     <div class="promo_buttons">
-                        <button class="promo_btn promo_btn_1">Buy now</button>
+                        <button class="promo_btn promo_btn_1" id="buy">Buy now</button>
                         <button class="promo_btn promo_btn_2">Try for free</button>
                     </div>
                 </div>
                 <div class="promo_video">
-                    <video width="600" height="320" src="video/video_2022-09-15_18-13-01.mp4"
+                    <video id="video" width="600" height="320" src="video/video_2022-09-15_18-13-01.mp4"
                         poster="video/video_back.png"></video>
-                    <div class="promo_play">
+                    <div class="promo_play" id="promo_play">
                         <div>
                             <i class="fa-solid fa-play"></i>
                         </div>
@@ -67,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="useful">
+    <section class="useful" id="info">
         <div class="container">
             <h2 class="title">Easy & Useful</h2>
             <h3 class="sub_title">Project Management Tool</h3>
@@ -150,87 +148,288 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="title">Services</h2>
             <div class="desc">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna        
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna
             </div>
             <div class="service_content">
                 <div class="tabs">
                     <div class="tab_item">
                         <div class="tabs_head">
                             <div class="tabs_wrap">
-                              <div class="tabs_icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
-                              <div class="tabs_title">Statistics</div>
-                            </div>
-                            <div class="tabs_down"><i class="fa-solid fa-caret-down"></i></div>  
-                        </div>
-                        <div class="tabs_content">
-                            <div class="tabs_img"></div>
-                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</div>
-                        </div>
-                    </div>
-                    <div class="tab_item">
-                        <div class="tabs_head">
-                            <div class="tabs_wrap">
-                              <div class="tabs_icon"><i class="fa-solid fa-envelope"></i></div>
-                              <div class="tabs_title">inbox</div>
-                            </div>
-                            <div class="tabs_down"><i class="fa-solid fa-caret-down"></i></div>  
-                        </div>
-                        <div class="tabs_content">
-                            <div class="tabs_img"></div>
-                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
-                        </div>
-                    </div>
-                    <div class="tab_item">
-                        <div class="tabs_head">
-                            <div class="tabs_wrap">
-                               <div class="tabs_icon"><i class="fa-sharp fa-solid fa-people-group"></i></div>
-                               <div class="tabs_title">team</div>  
+                                <div class="tabs_icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                                <div class="tabs_title">Statistics</div>
                             </div>
                             <div class="tabs_down"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
                         <div class="tabs_content">
                             <div class="tabs_img"></div>
-                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
+                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,<br><br>
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in</div>
                         </div>
                     </div>
                     <div class="tab_item">
                         <div class="tabs_head">
                             <div class="tabs_wrap">
-                              <div class="tabs_icon"><i class="fa-solid fa-gear"></i></div>
-                              <div class="tabs_title">settings</div>
+                                <div class="tabs_icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="tabs_title">inbox</div>
                             </div>
                             <div class="tabs_down"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
                         <div class="tabs_content">
                             <div class="tabs_img"></div>
-                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
+                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,<br><br>
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in </div>
                         </div>
                     </div>
                     <div class="tab_item">
                         <div class="tabs_head">
                             <div class="tabs_wrap">
-                             <div class="tabs_icon"><i class="fa-solid fa-rss"></i></div>
-                             <div class="tabs_title">feed</div>
+                                <div class="tabs_icon"><i class="fa-sharp fa-solid fa-people-group"></i></div>
+                                <div class="tabs_title">team</div>
                             </div>
                             <div class="tabs_down"><i class="fa-solid fa-caret-down"></i></div>
                         </div>
                         <div class="tabs_content">
                             <div class="tabs_img"></div>
-                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br><br>
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </div>
+                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,<br><br>
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in </div>
+                        </div>
+                    </div>
+                    <div class="tab_item">
+                        <div class="tabs_head">
+                            <div class="tabs_wrap">
+                                <div class="tabs_icon"><i class="fa-solid fa-gear"></i></div>
+                                <div class="tabs_title">settings</div>
+                            </div>
+                            <div class="tabs_down"><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                        <div class="tabs_content">
+                            <div class="tabs_img"></div>
+                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,<br><br>
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in </div>
+                        </div>
+                    </div>
+                    <div class="tab_item">
+                        <div class="tabs_head">
+                            <div class="tabs_wrap">
+                                <div class="tabs_icon"><i class="fa-solid fa-rss"></i></div>
+                                <div class="tabs_title">feed</div>
+                            </div>
+                            <div class="tabs_down"><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                        <div class="tabs_content">
+                            <div class="tabs_img"></div>
+                            <div class="tabs_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam,<br><br>
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in </div>
                         </div>
                     </div>
                 </div>
             </div>
     </section>
+    <section class="comment">
+        <div class="container">
+            <div class="comment_wrap">
+                <div>
+                    <h2 class="comment_title">What our customers<br> have to say about us.</h2>
+                    <div class="comment_desc">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>tempor incididunt ut
+                        labore et dolore magna
+                    </div>
+                    <button class="promo_btn promo_btn_1">Get started</button>
+                </div>
+                <div class="comment_items">
+                    <div class="comment_item">
+                        <div class="comment_image"
+                            style="background: url(image/background/photo_2022-09-24_19-25-34.jpg) center center/cover no-repeat;">
+                        </div>
+                        <div class="comment_content">
+                            <div class="comment_name">John Doe</div>
+                            <div class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
+                        </div>
+                    </div>
+                    <div class="comment_item">
+                        <div class="comment_image"
+                            style="background: url(image/background/photo_2022-09-24_19-25-45.jpg) center center/cover no-repeat;">
+                        </div>
+                        <div class="comment_content">
+                            <div class="comment_name">Khalessi</div>
+                            <div class="comment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="team" id="team">
+        <h2 class="title">Our Team</h2>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna</div>
+        <div class="team_content">
+            <div class="slider">
+                <div class="slider_item">
+                    <div class="slider_image"></div>
+                    <div class="slider_info">
+                        <div class="slider_name">Sophie Turner</div>
+                        <div class="slider_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt </div>
+                        <div class="slider_links">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <div class="slider_image"></div>
+                    <div class="slider_info">
+                        <div class="slider_name">Sophie Turner</div>
+                        <div class="slider_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt </div>
+                        <div class="slider_links">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <div class="slider_image"></div>
+                    <div class="slider_info">
+                        <div class="slider_name">Sophie Turner</div>
+                        <div class="slider_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magnaLorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eiusmod tempor incididunt </div>
+                        <div class="slider_links">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="help">
+        <h2 class="title">Contact Us</h2>
+        <div class="desc desc_dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna</div>
+        <div class="contact_content">
+            <form action="" class="form">
+                <div class="form_wrap">
+                    <input type="text" name="firstName" placeholder="First name">
+                    <input type="text" name="lastName" placeholder="Last name">
+                </div>
+                <div class="form_wrap">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="tel" name="phone" placeholder="Phone">
+                </div>
+                <textarea name="message" placeholder="Message" class="form_message"></textarea>
+                <div class="form_send">
+                    <label for="subscribe"><input type="checkbox" name="subscribe" class="form_checkbox">subscribe to the newsletter</label>
+                    <button class="send_btn" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_wrap">
+                <div class="footer_first">
+                    <a class="logo" href="#">
+                        <div class="logo_wrap">
+                            <img src="image/logo/logo.png" alt="logo" class="logo_img">
+                            <div class="logo_text">
+                                Dart <br>
+                                <span>service manager</span>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="footer_links">
+                        <a href="">Privecy Policy</a>
+                        <div class="circle"></div>
+                        <a href="">About Us</a>
+                        <div class="circle"></div>
+                        <a href="">About Us</a>
+                    </div>
+                </div>
+                <div class="footer_second">
+                    <nav class="nav">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="#home">Home</a></li>
+                            <li class="nav_item"><a href="#info">Useful</a></li>
+                            <li class="nav_item"><a href="#services">Service</a></li>
+                            <li class="nav_item"><a href="#team">Team</a></li>
+                            <li class="nav_item"><a href="#help">Help</a></li>
+                        </ul>
+                    </nav>
+                    <div class="slider_links footer_links">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal_wrap">
+            <div class="modal_form">
+                <form action="" class="form">
+                    <div class="form_wrap">
+                        <input type="text" name="firstName" placeholder="First name">
+                        <input type="text" name="lastName" placeholder="Last name">
+                    </div>
+                    <div class="form_wrap">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="tel" name="phone" placeholder="Phone">
+                    </div>
+                    <textarea name="message" placeholder="Message" class="form_message"></textarea>
+                    <div class="form_send">
+                        <label for="subscribe"><input type="checkbox" name="subscribe" class="form_checkbox">subscribe to the newsletter</label>
+                        <button class="send_btn" type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <i class="fa-solid fa-xmark modal_close"></i>
+        </div>
+    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
